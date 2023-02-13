@@ -1,7 +1,3 @@
 # psa_2022-23
 
-
-# Aula 1
-
-## Configuração do layout do matlab
-##
+Elementos para as aulas TP de programação de **Projeto de Sistemas de Automação**.
