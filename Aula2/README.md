@@ -5,10 +5,7 @@ Tópicos a abordar:
 Visualização em Matlab
 
 - Desenho de pontos
-- Desenho de linhas
 - Cores e marcadores
-- Desenho de polígonos
-- Mapas de cor
 - Animações com sobreposição do desenho
 - Animações com alteração das propriedades do gráfico
 
@@ -18,31 +15,47 @@ Desenhe 100 pontos aleatoriamente gerados entre $x \in [-10,10], y \in [-5,5]$.
 
 ### Exercício 2.2
 
-Escolha aleatoriamente 10 pares de pontos de entre os gerados no exercício anterior, e  desenhe um segmento de reta para cada par.
+Aplique a um ponto $x,y$ uma translação em $t_x,t_y$ com valores aleatórios no intervalo $[-v, v]$, em que $v$ é a velocidade máxima.
+
+Desenhe o ponto a mover-se pelo cenário aplicando sucessivos valores de $t_x$ e $t_y$
+
+![Point Moving](docs/movimento_ponto.png)
 
 ### Exercício 2.3
 
-Desenhe um polígono dado pelos pontos definidos com a função _ginput_. A figura deve mostrar o contorno do triângulo a azul e o seu interior a cinzento.
-
+Altere o exercício anterior de modo a não desenhar sempre um novo ponto, mas sim para alterar o desenho do ponto anteriormente feito. NB. Ver a função _set_.
 
 ### Exercício 2.4
 
-Aplique a um ponto uma matriz de transformação geométrica a 2D, dada por:
+Prepare um programa que tenha 9 jogadores de três equipas, vermelha, verde e azul.
 
-$
-\begin{bmatrix}
-cos(\alpha) & sin(\alpha) & t_x \\
--sin(\alpha) & cos(\alpha) & t_y \\
-0 & 0 & 1
-\end{bmatrix}
-$
+Sugere-se a criação de uma estrutura em matlab com os campos adequados.
 
-O ponto deverá estar definido em coordenadas homogéneas, i.e.:
+### Exercício 2.5
 
-$\begin{bmatrix}
-x \\
-y \\
-1
-\end{bmatrix}$
+Desenhe os jogadores na sua posição inicial.
+Coloque em cima de cada jogador um texto com o seu nome.
 
-Desenhe o ponto a mover-se pelo cenário aplicando matrizes de transformação com sucessivos valores de $\alpha$, $t_x$ e $t_y$
+![Point Moving](docs/desenho_com_texto.png)
+
+### Exercício 2.6
+
+Crie uma função _move_random_ para executar o movimento aleatório dos jogadores.
+
+### Exercício 2.7
+
+Crie um gráfico mais extenso, por exemplo de -12 a 12, e desenhe a caixa da arena.
+
+![Arena](docs/arena_com_caixa.png)
+
+### Exercício 2.8
+
+Crie um mecanismo para desabilitar jogadores que saiam fora da arena.
+
+### Exercício 2.9
+
+Crie um mecanismo para caçar um jogador.
+
+### Exercício 2.10
+
+Implemente funções de movimento mais inteligentes. Cada elemento do grupo deve fazer uma função diferente para cada equipa, por forma a que os jogadores tenham comportamentos diferentes.
